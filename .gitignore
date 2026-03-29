@@ -27,5 +27,6 @@ build
 *.njsproj
 *.sln
 *.sw?
-app.js2
-# Misc
+
+# Ignore a single file
+app2.jsx
