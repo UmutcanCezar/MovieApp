@@ -1,0 +1,77 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main {
+  flex: 1;
+}
+.title {
+  color: red;
+}
+.new {
+  border: 1px solid red;
+  padding: 10px;
+}
+.f30 {
+  font-size: 30px;
+}
+.active {
+  color: red !important;
+}
+#home {
+  background-image: url("./assets/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+}
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.summary {
+  max-height: 60%;
+  overflow-y: auto;
+}
+.summary::-webkit-scrollbar {
+  width: 6px;
+}
+.summary::-webkit-scrollbar-track {
+  background: transparent;
+}
+.summary::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.4);
+  border-radius: 10px;
+}
+.summary::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 120, 120, 0.7);
+}
+.spinner-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+@media (max-width: 768px) {
+  .summary {
+    max-height: 30%;
+  }
+  .producer p {
+    border-bottom: 1px solid white;
+  }
+  .actor_card {
+    max-height: 300px; /* istediğin yükseklik */
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
