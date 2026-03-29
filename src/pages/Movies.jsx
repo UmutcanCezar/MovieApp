@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import ErrorMessage from "../components/errorMessage";
 import Movie from "../components/Movies/movie";
 import Loading from "../components/loading";

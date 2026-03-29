@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import Logo from "./logo";
 import SearchForm from "./searchForm";
 import "bootstrap/dist/css/bootstrap.min.css";

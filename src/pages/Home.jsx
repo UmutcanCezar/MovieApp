@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 import SearchForm from "../components/searchForm";
 import Movies from "./Movies";
 import TvSeries from "./TvSeries";
