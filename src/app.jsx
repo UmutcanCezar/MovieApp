@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Movies from "./pages/Movies";
 import Home from "./pages/Home";
 import MovieDetails from "./pages/MovieDetails";
@@ -8,22 +8,19 @@ import TvSeries from "./pages/TvSeries";
 import MainLayout from "./layouts/MainLayout";
 import TvSeriesDetails from "./pages/TvSeriesDetails";
 
-const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "movies", element: <Movies /> },
-      { path: "TvSeries", element: <TvSeries /> },
-      { path: "movies/:id", element: <MovieDetails /> },
-      { path: "tv/:id", element: <TvSeriesDetails /> },
-      { path: "search", element: <SearchResults /> },
-    ],
-  },
-]);
-
 function App() {
-  return <RouterProvider router={routes} />;
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="movies" element={<Movies />} />
+        <Route path="TvSeries" element={<TvSeries />} />
+        <Route path="movies/:id" element={<MovieDetails />} />
+        <Route path="tv/:id" element={<TvSeriesDetails />} />
+        <Route path="search" element={<SearchResults />} />
+      </Route>
+    </Routes>
+  );
 }
+
 export default App;
