@@ -27,5 +27,5 @@ build
 *.njsproj
 *.sln
 *.sw?
-
+app.js2
 # Misc
