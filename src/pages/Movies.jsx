@@ -6,7 +6,7 @@ import Loading from "../components/loading";
 import MovieList from "../components/Movies/movieList";
 
 const api_URL = "https://api.themoviedb.org/3";
-const api_key = "ae1af8842aafba205986d60ed16d5f43";
+const api_key = import.meta.env.VITE_TMDB_KEY;
 const page = 1;
 const language = "tr-Tr";
 

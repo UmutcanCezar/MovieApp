@@ -6,7 +6,7 @@ import defaultpng from "../assets/profilephoto.png";
 import SimilarMovies from "./similarMovies";
 
 const api_URL = "https://api.themoviedb.org/3";
-const api_key = process.env.REACT_APP_TMDB_KEY;
+const api_key = import.meta.env.VITE_TMDB_KEY;
 const page = 1;
 const query = "batman";
 const language = "tr-Tr";

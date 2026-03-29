@@ -4,5 +4,3 @@ Bu proje, TMDb API kullanarak film verilerini gösteren bir React uygulamasıdı
 Frontend GitHub Pages üzerinden yayınlanmaktadır.
 
 > ⚠️ Proje hâlen geliştirme aşamasındadır ve yeni özellikler eklenmeye devam etmektedir.
-
-## Kurulum

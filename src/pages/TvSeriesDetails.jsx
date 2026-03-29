@@ -3,10 +3,10 @@ import { NavLink, useParams } from "react-router";
 import ErrorMessage from "../components/errorMessage";
 import Loading from "../components/loading";
 import defaultpng from "../assets/profilephoto.png";
-import SimilartvSeries from "./SimilartvSeries";
+import SimilartvSeries from "./similarTvSeries";
 
 const api_URL = "https://api.themoviedb.org/3";
-const api_key = "ae1af8842aafba205986d60ed16d5f43";
+const api_key = import.meta.env.VITE_TMDB_KEY;
 const page = 1;
 const query = "batman";
 const language = "tr-Tr";

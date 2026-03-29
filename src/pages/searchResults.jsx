@@ -7,7 +7,7 @@ import TvSeriesList from "../components/TvSeries/TvSeriesList";
 import Pagination from "../components/pagination";
 
 const api_URL = "https://api.themoviedb.org/3";
-const api_key = "ae1af8842aafba205986d60ed16d5f43";
+const api_key = import.meta.env.VITE_TMDB_KEY;
 const language = "tr-Tr";
 
 const SearchResults = () => {
